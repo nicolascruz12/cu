@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$opaqueWhite: #dcdddf;
+$darkBlue: #111827;
+
+:root {
+	--gray-300: #d1d5db;
+	--gray-600: #4b5563;
+	--body-transition-duration: 300ms;
+}
+
+body {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	color: $opaqueWhite;
+	margin: 0;
+	background-color: $opaqueWhite;
+	transition-duration: var(--body-transition-duration);
+}
+
+.dark body {
+	background-color: $darkBlue;
+}
